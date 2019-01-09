@@ -1,0 +1,20 @@
+PREDEF:
+    # はじめに
+  - introduction.re
+CHAPS:
+
+  - chapter1.re
+  - chapter2.re
+  - chapter3.re
+  - chapter4.re
+  - chapter5.re
+  - chapter6.re
+  - chapter7.re
+
+APPENDIX:
+  # 終わりに
+  - end.re
+
+POSTDEF:
+  # 著者一覧
+  - editor.re
