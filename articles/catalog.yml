@@ -7,6 +7,8 @@ CHAPS:
   - think-content.re
   # 本の構成を決定する
   - think-toc.re
+  # 本の内容を記載する
+  - think-body.re
 
 APPENDIX:
   # 終わりに
