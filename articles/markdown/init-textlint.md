@@ -1,6 +1,6 @@
 ```bash
 → npm init --yes
-Wrote to /Users/ishii-aoi/git/TB6-technical-writing-technic/package.json:
+Wrote to /Users/mofu/git/TB6-technical-writing-technic/package.json:
 
 {
   "name": "C94-hiyoko-surviveBlackLoad",
@@ -56,7 +56,7 @@ npm WARN deprecated circular-json@0.3.3: CircularJSON is in maintenance only, fl
 added 258 packages from 138 contributors and audited 570 packages in 5.839s
 found 6 vulnerabilities (3 low, 2 moderate, 1 critical)
   run `npm audit fix` to fix them, or `npm audit` for details
-(11:47:14) ± [ishii-aoi@ishiiaoinoMacBook-Pro.local] ~/git/TB6-technical-writing-technic (textlint U:2 ?:1 ✗)
+(11:47:14) ± [mofu@ishiiaoinoMacBook-Pro.local] ~/git/TB6-technical-writing-technic (textlint U:2 ?:1 ✗)
 → npm audit fix
 + grunt@1.0.3
 added 9 packages from 6 contributors, removed 3 packages and updated 9 packages in 2.549s
@@ -74,7 +74,7 @@ fixed 5 of 6 vulnerabilities in 570 scanned packages
 added 86 packages from 34 contributors and audited 1014 packages in 5.105s
 found 1 critical severity vulnerability
   run `npm audit fix` to fix them, or `npm audit` for details
-(11:54:08) ± [ishii-aoi@ishiiaoinoMacBook-Pro.local] ~/git/TB6-technical-writing-technic (textlint U:3 ✗)
+(11:54:08) ± [mofu@ishiiaoinoMacBook-Pro.local] ~/git/TB6-technical-writing-technic (textlint U:3 ✗)
 → npm audit fix
 up to date in 0.966s
 fixed 0 of 1 vulnerability in 1014 scanned packages
@@ -86,24 +86,24 @@ fixed 0 of 1 vulnerability in 1014 scanned packages
 ```bash
 → ls -al
 total 312
-drwxr-xr-x   19 ishii-aoi  staff     608  1 28 12:01 .
-drwxr-xr-x    7 ishii-aoi  staff     224  1 28 11:35 ..
-drwxr-xr-x   13 ishii-aoi  staff     416  1 28 11:54 .git
--rw-r--r--@   1 ishii-aoi  staff      37  1 28 11:49 .gitignore
--rw-r--r--    1 ishii-aoi  staff       7  1 28 11:43 .node-version
--rw-r--r--@   1 ishii-aoi  staff       0  1 28 12:01 .textlintrc ←追加
--rw-r--r--    1 ishii-aoi  staff      98  1 28 11:35 Gemfile
--rw-r--r--    1 ishii-aoi  staff     249  1 28 11:35 Gemfile.lock
--rw-r--r--    1 ishii-aoi  staff    3215  1 28 11:35 Gruntfile.js
--rw-r--r--    1 ishii-aoi  staff    1065  1 28 11:35 LICENSE
--rw-r--r--    1 ishii-aoi  staff     132  1 28 11:35 README.md
-drwxr-xr-x   18 ishii-aoi  staff     576  1 28 11:35 articles
--rwxr-xr-x    1 ishii-aoi  staff     283  1 28 11:35 build-in-docker.sh
-drwxr-xr-x  291 ishii-aoi  staff    9312  1 28 11:54 node_modules
--rw-r--r--    1 ishii-aoi  staff  111065  1 28 11:54 package-lock.json
--rw-r--r--    1 ishii-aoi  staff    1307  1 28 11:54 package.json
--rw-r--r--    1 ishii-aoi  staff    3477  1 28 11:35 redpen-conf-ja.xml
--rwxr-xr-x    1 ishii-aoi  staff     211  1 28 11:35 setup.sh
+drwxr-xr-x   19 mofu  staff     608  1 28 12:01 .
+drwxr-xr-x    7 mofu  staff     224  1 28 11:35 ..
+drwxr-xr-x   13 mofu  staff     416  1 28 11:54 .git
+-rw-r--r--@   1 mofu  staff      37  1 28 11:49 .gitignore
+-rw-r--r--    1 mofu  staff       7  1 28 11:43 .node-version
+-rw-r--r--@   1 mofu  staff       0  1 28 12:01 .textlintrc ←追加
+-rw-r--r--    1 mofu  staff      98  1 28 11:35 Gemfile
+-rw-r--r--    1 mofu  staff     249  1 28 11:35 Gemfile.lock
+-rw-r--r--    1 mofu  staff    3215  1 28 11:35 Gruntfile.js
+-rw-r--r--    1 mofu  staff    1065  1 28 11:35 LICENSE
+-rw-r--r--    1 mofu  staff     132  1 28 11:35 README.md
+drwxr-xr-x   18 mofu  staff     576  1 28 11:35 articles
+-rwxr-xr-x    1 mofu  staff     283  1 28 11:35 build-in-docker.sh
+drwxr-xr-x  291 mofu  staff    9312  1 28 11:54 node_modules
+-rw-r--r--    1 mofu  staff  111065  1 28 11:54 package-lock.json
+-rw-r--r--    1 mofu  staff    1307  1 28 11:54 package.json
+-rw-r--r--    1 mofu  staff    3477  1 28 11:35 redpen-conf-ja.xml
+-rwxr-xr-x    1 mofu  staff     211  1 28 11:35 setup.sh
 ```
 
 ``.textlintrc``の追加
@@ -122,14 +122,14 @@ textlintの実行
 ```bash
 node_modules/.bin/textlint --preset ja-technical-writing ./articles/markdown/*.md
 
-/Users/ishii-aoi/git/TB6-technical-writing-technic/articles/markdown/init-textlint.md
+/Users/mofu/git/TB6-technical-writing-technic/articles/markdown/init-textlint.md
    48:15  error  文末が"。"で終わっていません。  ja-technical-writing/ja-no-mixed-period
    67:11  error  文末が"。"で終わっていません。  ja-technical-writing/ja-no-mixed-period
    84:9   error  文末が"。"で終わっていません。  ja-technical-writing/ja-no-mixed-period
   109:18  error  文末が"。"で終わっていません。  ja-technical-writing/ja-no-mixed-period
   120:11  error  文末が"。"で終わっていません。  ja-technical-writing/ja-no-mixed-period
 
-/Users/ishii-aoi/git/TB6-technical-writing-technic/articles/markdown/think-body.md
+/Users/mofu/git/TB6-technical-writing-technic/articles/markdown/think-body.md
    15:18   ✓ error  Found invalid control character(BACKSPACE \u0008)                         ja-technical-writing/no-invalid-control-character
    17:20   error    Disallow to use "！"                                                      ja-technical-writing/no-exclamation-question-mark
    17:32   error    弱い表現: "思います" が使われています。                                   ja-technical-writing/ja-no-weak-phrase
