@@ -1,3 +1,7 @@
+```bash
+→ npm init --yes
+Wrote to /Users/ishii-aoi/git/TB6-technical-writing-technic/package.json:
+
 {
   "name": "C94-hiyoko-surviveBlackLoad",
   "version": "0.0.1",
@@ -29,14 +33,14 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "grunt": "^1.0.3",
+    "grunt": "1.0.1",
     "grunt-cli": "1.2.0",
     "grunt-contrib-clean": "1.0.0",
     "grunt-open": "0.2.3",
     "grunt-shell": "1.3.0",
     "js-yaml": "3.6.0",
-    "load-grunt-tasks": "3.5.0",
-    "textlint": "^11.2.1"
+    "load-grunt-tasks": "3.5.0"
   },
   "keywords": []
 }
+```
