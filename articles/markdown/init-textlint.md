@@ -600,4 +600,10 @@ Try to run: $ textlint --fix [file]
 
 ## 参考文献
 
-[textlint-plugin-review](https://www.npmjs.com/package/textlint-plugin-review)
+### textlint
+
+- [textlint-plugin-review](https://www.npmjs.com/package/textlint-plugin-review)
+
+### 実際にtextlintを導入している人々
+
+- [Re:VIEWで書いた文章の校正をCircleCIとtextlintでGitHubのPRに自動コメントする仕組み](http://blog.naoshihoshi.com/entry/2018/10/15/113000)
