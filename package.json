@@ -1,19 +1,19 @@
 {
-  "name": "C94-hiyoko-surviveBlackLoad",
+  "name": "TB6-technical-writing-technic",
   "version": "0.0.1",
   "private": true,
   "description": "同人誌の作り方本はあっても文章がかけなきゃ意味ないじゃない！だったら作るしかないですね？",
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/onestop-techbook/C94-hiyoko-surviveBlackLoad.git"
+    "url": "git+https://github.com/MofuMofu2/TB6-technical-writing-technic.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/onestop-techbook/C94-hiyoko-surviveBlackLoad/issues"
+    "url": "https://github.com/MofuMofu2/TB6-technical-writing-technic/issues"
   },
-  "homepage": "https://github.com/onestop-techbook/C94-hiyoko-surviveBlackLoad#readme",
+  "homepage": "https://github.com/MofuMofu2/TB6-technical-writing-technic#readme",
   "engines": {
     "node": ">=6.0.0"
   },
@@ -26,6 +26,8 @@
     "md": "grunt markdown",
     "html": "grunt html",
     "test": "npm run html",
+    "textlint-markdown": "./node_modules/.bin/textlint --preset ja-technical-writing ./articles/markdown/*.md",
+    "textlint-review": "./node_modules/.bin/textlint --preset ja-technical-writing ./articles/*.re"
   },
   "dependencies": {},
   "devDependencies": {
@@ -37,6 +39,7 @@
     "js-yaml": "3.6.0",
     "load-grunt-tasks": "3.5.0",
     "textlint": "^11.2.1",
+    "textlint-plugin-review": "^0.3.3",
     "textlint-rule-preset-ja-technical-writing": "^3.1.0"
   },
   "keywords": []
