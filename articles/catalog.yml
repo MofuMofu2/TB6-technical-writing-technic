@@ -9,11 +9,13 @@ CHAPS:
   - think-toc.re
   # 本の内容を記載する
   - think-body.re
-
+  # 本を推敲する
+  - improve-text.re
 APPENDIX:
+  # 静的検査ツールで原稿を検査する
+  - init-textlint.md
+POSTDEF:
   # 終わりに
   - end.re
-
-POSTDEF:
   # 著者一覧
   - editor.re
