@@ -554,7 +554,7 @@ Dockerコンテナ上ではあまり性能が出ないため、大量のデー�
 === 一括置換
 
  * テキストを検索および置換する（Microsoft Office）
- ** https://support.office.com/ja-jp/article/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%82%92%E6%A4%9C%E7%B4%A2%E3%81%8A%E3%82%88%E3%81%B3%E7%BD%AE%E6%8F%9B%E3%81%99%E3%82%8B-c6728c16-469e-43cd-afe4-7708c6c779b7
+ ** https://support.office.com/ja-jp/article/テキストを検索および置換する-c6728c16-469e-43cd-afe4-7708c6c779b7
 
 === 接続詞
 
