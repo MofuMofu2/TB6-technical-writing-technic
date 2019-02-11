@@ -207,16 +207,16 @@ OSごとの手順の違い、ハマりどころとその回避方法がまとま
 
 === 印刷所関連
 
-* キンコーズ
-** https://www.kinkos.co.jp/
+ * キンコーズ
+ ** https://www.kinkos.co.jp/
 
-* 有限会社ねこのしっぽ
-** https://www.shippo.co.jp/neko/
+ * 有限会社ねこのしっぽ
+ ** https://www.shippo.co.jp/neko/
 
-* 株式会社日光企画
-** http://www.nikko-pc.com/index/top.html
+ * 株式会社日光企画
+ ** http://www.nikko-pc.com/index/top.html
 
 === ブレインストーミング
 
-* コトバンク
-** https://kotobank.jp/word/%E3%83%96%E3%83%AC%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0-180594
+ * コトバンク
+ ** https://kotobank.jp/word/ブレインストーミング-180594
