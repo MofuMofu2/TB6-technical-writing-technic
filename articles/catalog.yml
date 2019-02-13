@@ -11,7 +11,7 @@ CHAPS:
   - improve-text.re
 APPENDIX:
   # 静的検査ツールで原稿を検査する
-  # - init-textlint.re
+  - init-textlint.re
 POSTDEF:
   # 終わりに
   - end.re
