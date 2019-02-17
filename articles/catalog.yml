@@ -6,12 +6,12 @@ CHAPS:
   # 原稿を書き始める前の準備
   - think-toc.re
   # 本の内容を記載する
-  # - think-body.re
+  - think-body.re
   # 本を推敲する
   - improve-text.re
 APPENDIX:
   # 静的検査ツールで原稿を検査する
-  # - init-textlint.re
+  - init-textlint.re
 POSTDEF:
   # 終わりに
   - end.re
