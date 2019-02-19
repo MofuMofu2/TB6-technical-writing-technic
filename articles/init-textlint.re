@@ -12,7 +12,7 @@ textlintの実行にはNode.js（npm）環境が必要です。ここでは@<cod
 この本ではNode.js環境を使って構築します。工夫すれば、CIにも組み込むことができるためです。
 
 はじめに、textlintをインストールします。プロジェクトフォルダに移動し、@<code>{npm install textlint}でtextlintをインストールしましょう。
-Re:VIEWファイルに対して静的検査を実施する場合、専用プラグインである@<>{textlint-plugin-review}（https://www.npmjs.com/package/textlint-plugin-review）も合わせてインストールします。
+Re:VIEWファイルに対して静的検査を実施する場合、専用プラグインである@<code>{textlint-plugin-review}（https://www.npmjs.com/package/textlint-plugin-review）も合わせてインストールします。
 @<code>{$}はコマンドラインであることを示しています。コンソールにコマンドを記述するときは@<code>{$}を記載しないでください。
 
 //list[textlint-install][npm install]{
@@ -101,7 +101,8 @@ $ node_modules/.bin/textlint --preset ja-technical-writing ./articles/markdown/*
 120:11  error  文末が"。"で終わっていません。  ja-technical-writing/ja-no-mixed-period
 
 /Users/mofu/git/TB6-technical-writing-technic/articles/markdown/think-body.md
-15:18   ✓ error  Found invalid control character(BACKSPACE \u0008)  ja-technical-writing/no-invalid-control-character
+15:18   ✓ error  Found invalid control character(BACKSPACE \u0008)
+ja-technical-writing/no-invalid-control-character
 
 〜省略〜
 ✖ 94 problems (94 errors, 0 warnings)
@@ -114,6 +115,10 @@ Try to run: $ textlint --fix [file]
 === npm runで実行できるようにする
 
 @<code>{package.json}へtextlintコマンドを登録すれば、@<code>{npm run コマンド名}でtextlintを実行できるようになります。
+今回は@<code>{textlint}というコマンド名を登録しました。@<code>{package.json}に@<code>{npm run textlint}で実行したいコマンドを記載します。
+
+@<list>{add-command}は@<code>{"textlint": "node_modules/.bin/textlint --preset ja-technical-writing ./articles/markdown/*.md"}を@<code>{package.jsonへ追加した例です。
+
 こうすることで、CIツールと組み合わせてtextlintを実施できるようになります。
 
 //list[add-command][package.jsonへコマンドを追記]{
@@ -127,7 +132,9 @@ Try to run: $ textlint --fix [file]
     "html": "grunt html",
     "test": "npm run html",
 # この行を追加
-    "textlint": "node_modules/.bin/textlint --preset ja-technical-writing ./articles/markdown/*.md"
+    "textlint": "node_modules/.bin/textlint --preset ja-technical-writing
+# 紙面の都合で改行
+                ./articles/markdown/*.md"
   \},
 //}
 
