@@ -1,18 +1,19 @@
 = 静的検査ツールを利用する
 
-技術同人誌の本文をテキスト形式で記載した場合、文章に対する静的検査を行うことができます。
-この本ではazuさんが作成した、@<code>{textlint}（https://github.com/textlint/textlint）の基本的な利用法を紹介します。
+技術同人誌の本文をテキスト形式で記載した場合、文章に対する静的検査が実行できます。
+この本ではazuさんが作成した、@<code>{textlint}の基本的な利用法を紹介します。
 
 == textlintのインストール
 
 textlintの実行にはNode.js（npm）環境が必要です。ここでは@<code>{npm}を用いてインストールする方法を解説します。
-他にも、Google Chrome拡張を導入する（textlint: 文章チェッカー）
-またはtextlint-app（https://github.com/textlint/textlint-app）などを利用できます。
+この本に記載している動作環境は、@<code>{macOS Mojave バージョン10.14.3}です。
+
+Google Chrome拡張を導入する（textlint: 文章チェッカー）・textlint-appを通じてtextlintを利用することも可能です。
 
 この本ではNode.js環境を使って構築します。工夫すれば、CIにも組み込むことができるためです。
 
 はじめに、textlintをインストールします。プロジェクトフォルダに移動し、@<code>{npm install textlint}でtextlintをインストールしましょう。
-Re:VIEWファイルに対して静的検査を実施する場合、専用プラグインである@<code>{textlint-plugin-review}（https://www.npmjs.com/package/textlint-plugin-review）も合わせてインストールします。
+Re:VIEWファイルに対して静的検査を実施する場合、専用プラグインである@<code>{textlint-plugin-review}も合わせてインストールします。
 @<code>{$}はコマンドラインであることを示しています。コンソールにコマンドを記述するときは@<code>{$}を記載しないでください。
 
 //list[textlint-install][npm install]{
@@ -34,7 +35,7 @@ Wrote to /Users/mofu/git/TB6-technical-writing-technic/package.json:
 
 textlintをインストールしただけでは、静的検査を実施することはできません。検査用ルールを導入・作成する必要があります。
 
-ここでは、@<code>{textlint-rule-preset-ja-technical-writing}（https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing）
+ここでは、@<code>{textlint-rule-preset-ja-technical-writing}
 というルールを導入します。このルールを利用する、技術文章を書く上で守るべき事項を網羅的に検査できます。
 
 例えば、「「ですます調」、「である調」を統一する」・「同一の単語を間違えて連続しているのをチェックする」・「よくある日本語の誤用をチェックする」などをチェックできます。
@@ -59,7 +60,7 @@ $ npm install --save-dev  textlint-rule-preset-ja-technical-writing
 \}
 //}
 
-@<code>{.textlintrc}は、.gitignoreなどと同じ階層に配置すると良いでしょう。@<list>{dir}はこの本を作成するときに利用したリポジトリのディレクトリ構成です。
+@<code>{.textlintrc}は、.gitignoreなどと同じ階層に配置します。@<list>{dir}はこの本を作成するときに利用したリポジトリのディレクトリ構成です。
 組版にはRe:VIEWを利用しています。
 
 //list[dir][Re:VIEWを用いた場合のディレクトリ構成例]{
@@ -67,7 +68,6 @@ $ ls -al
 total 328
 drwxr-xr-x   18 mofumofu  staff     576  2 11 14:14 .
 drwxr-xr-x   10 mofumofu  staff     320  2  5 19:52 ..
--rw-r--r--@   1 mofumofu  staff    6148  2 10 20:49 .DS_Store
 drwxr-xr-x   16 mofumofu  staff     512  2 17 20:19 .git
 -rw-r--r--    1 mofumofu  staff      82  2 10 20:55 .gitignore
 -rw-r--r--    1 mofumofu  staff      93  2  2 18:23 .textlintrc
@@ -117,7 +117,7 @@ Try to run: $ textlint --fix [file]
 @<code>{package.json}へtextlintコマンドを登録すれば、@<code>{npm run コマンド名}でtextlintを実行できるようになります。
 今回は@<code>{textlint}というコマンド名を登録しました。@<code>{package.json}に@<code>{npm run textlint}で実行したいコマンドを記載します。
 
-@<list>{add-command}は@<code>{"textlint": "node_modules/.bin/textlint --preset ja-technical-writing ./articles/markdown/*.md"}を@<code>{package.jsonへ追加した例です。
+@<list>{add-command}は@<code>{"textlint": "node_modules/.bin/textlint --preset ja-technical-writing ./articles/markdown/*.md"}を@<code>{package.json}へ追加した例です。
 
 こうすることで、CIツールと組み合わせてtextlintを実施できるようになります。
 
@@ -138,7 +138,7 @@ Try to run: $ textlint --fix [file]
   \},
 //}
 
-これで、文章の静的検査ができるようになりました。複数人執筆の場合、CIツールと組み合わせて検査できる環境があると良いでしょう。編集者の修正負荷を下げることができます。
+これで、文章の静的検査ができるようになりました。複数人執筆の場合、CIツールと組み合わせて検査できる環境があると便利です。編集者の修正負荷を下げることができるからです。
 
 == 参考文献
 
