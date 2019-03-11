@@ -139,23 +139,3 @@ Try to run: $ textlint --fix [file]
 //}
 
 これで、文章の静的検査ができるようになりました。複数人執筆の場合、CIツールと組み合わせて検査できる環境があると便利です。編集者の修正負荷を下げることができるからです。
-
-== 参考文献
-
-=== textlint
-
- * textlint
- ** https://efcl.info/2015/09/10/introduce-textlint/
-
-=== プラグイン
-
- * textlint-plugin-review
- ** https://www.npmjs.com/package/textlint-plugin-review
-
- * プラグインの紹介ページ
- ** https://github.com/textlint-ja
-
-=== 実際にtextlintを導入している人々
-
- * Re:VIEWで書いた文章の校正をCircleCIとtextlintでGitHubのPRに自動コメントする仕組み
- ** http://blog.naoshihoshi.com/entry/2018/10/15/113000
