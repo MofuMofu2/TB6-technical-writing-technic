@@ -1,5 +1,26 @@
 = 参考文献
 
+== 原稿を書き始める前の準備
+
+
+=== 印刷所関連
+
+ * キンコーズ
+ ** https://www.kinkos.co.jp/
+
+ * 有限会社ねこのしっぽ
+ ** https://www.shippo.co.jp/neko/
+
+ * 株式会社日光企画
+ ** http://www.nikko-pc.com/index/top.html
+
+=== ブレインストーミング
+
+ * コトバンク
+ ** https://kotobank.jp/word/ブレインストーミング-180594
+
+
+
 == 推敲してより良い原稿を作成する
 
  * コトバンク：推敲
