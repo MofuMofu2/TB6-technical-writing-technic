@@ -15,5 +15,7 @@ APPENDIX:
 POSTDEF:
   # 終わりに
   - end.re
+  # 参考文献
+  - references.re
   # 著者一覧
   - editor.re
