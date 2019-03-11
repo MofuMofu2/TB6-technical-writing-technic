@@ -54,3 +54,23 @@
 
  * 書体の使い分けー伝わるデザイン 研究発表のユニバーサルデザイン
  ** http://tsutawarudesign.com/yomiyasuku1.html
+ 
+== 静的検査ツールを利用する
+
+=== textlint
+
+ * textlint
+ ** https://efcl.info/2015/09/10/introduce-textlint/
+
+=== プラグイン
+
+ * textlint-plugin-review
+ ** https://www.npmjs.com/package/textlint-plugin-review
+
+ * プラグインの紹介ページ
+ ** https://github.com/textlint-ja
+
+=== 実際にtextlintを導入している人々
+
+ * Re:VIEWで書いた文章の校正をCircleCIとtextlintでGitHubのPRに自動コメントする仕組み
+ ** http://blog.naoshihoshi.com/entry/2018/10/15/113000
