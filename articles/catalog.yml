@@ -19,3 +19,5 @@ POSTDEF:
   - references.re
   # 著者一覧
   - editor.re
+  # おまけ
+  - qr.re
