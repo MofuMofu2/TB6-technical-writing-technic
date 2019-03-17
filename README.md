@@ -12,7 +12,7 @@
 
 ## 頒布場所
 
-[技術書典6](https://techbookfest.org/event/tbf06)にて、``き28 りまりま団``で頒布します。
+[技術書典6](https://techbookfest.org/event/tbf06)にて、[き28 りまりま団](https://techbookfest.org/event/tbf06/circle/35980001)で頒布します。
 
 ## 通販
 
